@@ -12,7 +12,7 @@ router.get('/webhook', function(req, res, next) {
 
 router.post('/webhook', function(req, res) {
     var messaging_events = req.body.entry[0].messaging;
-    console.log(req.body)
+    console.log(JSON.stringify(req.body))
 });
 
 module.exports = router;
